@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vos Talents de Créateur de Sites Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+		h1 {
+            color: white; 
+        }
+
+        h2 {
+            color: black; 
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #555;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WebWeaver</h1>
+    </header>
+	
+	<section>
+	<h3>Vous avez besoin de visibilité ? de promouvoir votre acctivitée ? de partager des
+	informations ? Ou de pouvoir etre contacté facilement ?  </h3>
+	<h3>Que vous soyez restaurateur, fleuriste, chanteur ou meme particulier : </h3> 
+	<h2>Il vous faut un site web !</h2>
+	<h3>Maleureusement vous ne savez pas comment vous en procurer un. Confectionner un site web
+	est en effet une tache diffice qui demande de solide base en programation et une connaisance 
+	pointu de langages de programation tel que l'HTML, le CSS ou encore JavaScript.</h3>
+	<h3>Heureusement de nombreuse structure vous propose, comme WebWeaver, de confectionner votre 
+	page web</h3>
+	<h2>vous etes donc au bon endroit !</h2>
+	</section>
+	
+	
+    <section>
+        
+		<h3>pourquoi devriez vous avoir recourt a WebWeaver ?</h3>
+		<ul>
+			<li><p>Je suis un créateur de sites web passionné, spécialisé dans la 
+			conception de sites web divers et varier. Que vous ayez besoin d'un site
+			vitrine, d'un blog, ou d'une boutique en ligne, je suis là pour vous aider
+			à concrétiser votre vision en ligne. Je peut egalment m'occuper de votre projet
+			de a à z en m'occupant du design, du contenu et de la conception </p>
+			<li><p>De plus, mes prix sont tres abordable. Le cout de creation
+			d'un site internet en agence vont de  1 000 à 5 000 €, pour un site basique
+			de présentation(5 à 10 pages) et de 10 000 à 100 000 €, un développements
+			web plus élaborés (espace réservés pour les membres,vente en ligne, 
+			réservation de cours… ). Avec moi, le prix sera plutot de 300 a 1500 € pour
+			des projet simple et de 3500 a 50 000 € pour des projet plus complexe ( je vous 
+			rassure les projet montant a 50 000 € sont des projet nessecitant plusieurs 
+			centaine d'heures de travail tel que des site complex comme amazone,... Vos projet 
+			rentreron pour la plupart dans les projet simple ). Le prix sera de tout facon 
+			discuté et adaptée en fonction de votre budget et de vos envies. </p>
+		</ul>
+		<h3>Mais pourquoi mes prix sont ils si abordable ? La prestation est elle de
+		mauvaise qualité ?</h3>
+		<p>Non, si les prix sont si abordable c'est tout simplement car la creation se site 
+		internet n'est pas mon acctivitée principal. Je suis acctuellement etudiant et de ce 
+		fait je ne peut pas etre disponible 100% du temps. Je ne peut allors pas vous prommettre 
+		de finir votre projet aussi vite qu,une agence specialiée. Je les realiserait cependant 
+		aussi vite que possible et m'addapterais a vos attente. La qualité sera, elle, aussi bonne 
+		qu'en agance et vous n'aurez évidement pas a payer si le reultat final ne vous convient pas</p>
+		
+		<p>Contactez-moi dès aujourd'hui pour discuter de votre projet!</p>
+		
+        <a href="#" class="cta-button" onclick="openModal()">Contactez-moi</a>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Contactez-moi</h2>
+            <p>N'hésitez pas à me contacter pour discuter de vos besoins et idées.
+			Je suis là pour vous aider!</p>
+            <a href="mailto:webweaverentreprise@gmail.com" class="cta-button">Contactez-moi</a>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Vos Talents de Créateur de Sites Web. Tous droits réservés.
+    </footer>
+
+    <script>
+        function openModal() {
+            document.getElementById('contactModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('contactModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
